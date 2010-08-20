@@ -1,7 +1,7 @@
 ASemaphore is a structure that let you fire a method only after N async
 functions have been executed.
 
-The name has been extracted out of [Semaphore](http://en.wikipedia.org/wiki/Semaphore_(programming)) 
+(The name has been extracted out of [Semaphore](http://en.wikipedia.org/wiki/Semaphore_(programming)) 
 
 Latest Version 0.1
 
