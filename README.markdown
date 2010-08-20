@@ -8,6 +8,7 @@ Latest Version 0.1
 # Usage
 
 ASemaphore is a module:
+
 1) Require it: 
 	var ASemaphore = require("./ASemaphore"),
 2) Construct it:
@@ -25,7 +26,8 @@ Requires Node.JS v0.1.99 or greater.
 
 
 #Examples
-test.js  thanks to [http://gist.github.com/540427](http://gist.github.com/540427) (ryedin)
+[test.js](http://github.com/mrohad/ASemaphore/blob/master/test.js)  
+thanks to [http://gist.github.com/540427](http://gist.github.com/540427) (ryedin)
 	
 # Bugs and Contribution
 Please let us know if you find any bug or if you would like to contribute code: 
