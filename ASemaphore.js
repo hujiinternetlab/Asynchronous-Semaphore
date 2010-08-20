@@ -7,13 +7,13 @@ var ASemaphore = function(semaphore,fireFunc){
 	log.debug("Starting Asemaphore with semaphore:" +this.semaphore);
 };
 
-ASemphore.prototype.v = function(){
+ASemaphore.prototype.v = function(){
 	++this.semaphore;
 	log.debug("Asemaphore semaphore after v(): " +this.semaphore);
 	return this.semaphore;
 };
 
-ASemphore.prototype.p = function(){
+ASemaphore.prototype.p = function(){
 	if((--this.semaphore)<1){
 		log.debug("Asemaphore fire() after p()");
 		this.fire.apply(this,arguments);
@@ -22,7 +22,7 @@ ASemphore.prototype.p = function(){
 	return this.counter;
 };
 
-ASemphore.prototype.warpCallBack = function(cb){
+ASemaphore.prototype.warpCallBack = function(cb){
 	if(cb == undefined)
 		return undefined;
 	else{
@@ -34,6 +34,7 @@ ASemphore.prototype.warpCallBack = function(cb){
 		};
 	}
 };
+
 exports.ctor = function(semaphore,fireFunc){
-	return new asemaphore(semaphore,fireFunc);
+	return new ASemaphore(semaphore,fireFunc);
 };
