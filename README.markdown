@@ -1,4 +1,7 @@
-ASemaphore is a structure that let you fire a method only when a N async functions have been executed.
+ASemaphore is a structure that let you fire a method only after N async
+functions have been executed.
+
+The name has been extracted out of [Semaphore](http://en.wikipedia.org/wiki/Semaphore_(programming)) 
 
 Latest Version 0.1
 
@@ -22,7 +25,7 @@ Requires Node.JS v0.1.99 or greater.
 
 
 #Examples
-test.js  thanks to http://gist.github.com/540427 (ryedin)
+test.js  thanks to [http://gist.github.com/540427](http://gist.github.com/540427) (ryedin)
 	
 # Bugs and Contribution
 Please let us know if you find any bug or if you would like to contribute code: 
